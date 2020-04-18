@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Character
+    abstract class Character
     {
+        const double MAX_HEALTH = 100;
         public string Name
         {
             get;
@@ -26,15 +27,16 @@ namespace BattleSim
             private set;
         }
 
-        public double ReceiveDamage()
+        public Character(string name, Weapon equipedWeapon)
         {
-            throw new NotImplementedException();
-        } 
-        
-        public double DealDamage()
-        {
-            throw new NotImplementedException();
+            this.Name = name;
+            this.EquipedWeapon = equipedWeapon;
+            this.Health = MAX_HEALTH;
         }
+
+        public abstract double ReceiveDamage();
+
+        public abstract double DealDamage();
 
         public override string ToString()
         {
