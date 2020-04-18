@@ -12,9 +12,16 @@ namespace BattleSim
 {
     public partial class Form1 : Form
     {
+        Game newGame;
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void btnStartGame_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
