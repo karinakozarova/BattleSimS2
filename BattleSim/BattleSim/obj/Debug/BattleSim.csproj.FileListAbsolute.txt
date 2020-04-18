@@ -15,3 +15,27 @@ C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.c
 C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.CopyComplete
 C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.exe
 C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.pdb
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.exe.config
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.exe
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.pdb
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\Google.Protobuf.dll
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\MySql.Data.dll
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\Renci.SshNet.dll
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\Google.Protobuf.xml
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\MySql.Data.xml
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\bin\Debug\Renci.SshNet.xml
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csprojAssemblyReference.cache
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.AddPlayerForm.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.CreateWeaponsAndSpells.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.Form1.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.GameForm.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.KnightControl.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.Properties.Resources.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.WizardControl.resources
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.GenerateResource.cache
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.CoreCompileInputs.cache
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.CopyComplete
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.exe
+C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.pdb

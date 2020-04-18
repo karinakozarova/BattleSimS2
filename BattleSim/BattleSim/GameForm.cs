@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace BattleSim
 {
-    public partial class Form1 : Form
+    public partial class GameForm : Form
     {
-        Game newGame;
-        public Form1()
+        public GameForm()
         {
             InitializeComponent();
-        }
-
-        private void btnStartGame_Click(object sender, EventArgs e)
-        {
-            
         }
 
     }
