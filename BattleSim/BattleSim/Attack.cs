@@ -8,5 +8,22 @@ namespace BattleSim
 {
     class Attack
     {
+        public string Name
+        {
+            get;
+            private set;
+        }
+
+        public double Damage
+        {
+            get;
+            private set;
+        }
+
+        public Attack(string name, double damage)
+        {
+            this.Name = name;
+            this.Damage = damage;
+        }
     }
 }
