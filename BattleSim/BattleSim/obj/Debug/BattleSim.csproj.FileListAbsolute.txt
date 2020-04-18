@@ -1,0 +1,17 @@
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.exe.config
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.exe
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\BattleSim.pdb
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\Google.Protobuf.dll
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\MySql.Data.dll
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\Renci.SshNet.dll
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\Google.Protobuf.xml
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\MySql.Data.xml
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\bin\Debug\Renci.SshNet.xml
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csprojAssemblyReference.cache
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.Properties.Resources.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.GenerateResource.cache
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.CopyComplete
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.exe
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.pdb
