@@ -38,9 +38,10 @@
             // btnStartGame
             // 
             this.btnStartGame.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStartGame.Location = new System.Drawing.Point(221, 183);
+            this.btnStartGame.Location = new System.Drawing.Point(249, 229);
+            this.btnStartGame.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStartGame.Name = "btnStartGame";
-            this.btnStartGame.Size = new System.Drawing.Size(257, 64);
+            this.btnStartGame.Size = new System.Drawing.Size(289, 80);
             this.btnStartGame.TabIndex = 0;
             this.btnStartGame.Text = "Start Game";
             this.btnStartGame.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(221, 352);
+            this.btnExit.Location = new System.Drawing.Point(249, 440);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(257, 67);
+            this.btnExit.Size = new System.Drawing.Size(289, 84);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -59,19 +61,22 @@
             // btnCreateWeaponsAndSpells
             // 
             this.btnCreateWeaponsAndSpells.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateWeaponsAndSpells.Location = new System.Drawing.Point(221, 265);
+            this.btnCreateWeaponsAndSpells.Location = new System.Drawing.Point(249, 331);
+            this.btnCreateWeaponsAndSpells.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCreateWeaponsAndSpells.Name = "btnCreateWeaponsAndSpells";
-            this.btnCreateWeaponsAndSpells.Size = new System.Drawing.Size(257, 69);
+            this.btnCreateWeaponsAndSpells.Size = new System.Drawing.Size(289, 86);
             this.btnCreateWeaponsAndSpells.TabIndex = 2;
             this.btnCreateWeaponsAndSpells.Text = "Create Weapons and Spells";
             this.btnCreateWeaponsAndSpells.UseVisualStyleBackColor = true;
+            this.btnCreateWeaponsAndSpells.Click += new System.EventHandler(this.btnCreateWeaponsAndSpells_Click);
             // 
             // btnAddPlayer1
             // 
             this.btnAddPlayer1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPlayer1.Location = new System.Drawing.Point(221, 12);
+            this.btnAddPlayer1.Location = new System.Drawing.Point(249, 15);
+            this.btnAddPlayer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddPlayer1.Name = "btnAddPlayer1";
-            this.btnAddPlayer1.Size = new System.Drawing.Size(257, 64);
+            this.btnAddPlayer1.Size = new System.Drawing.Size(289, 80);
             this.btnAddPlayer1.TabIndex = 3;
             this.btnAddPlayer1.Text = "Add Player 1";
             this.btnAddPlayer1.UseVisualStyleBackColor = true;
@@ -79,23 +84,25 @@
             // btnAddPlayer2
             // 
             this.btnAddPlayer2.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPlayer2.Location = new System.Drawing.Point(221, 100);
+            this.btnAddPlayer2.Location = new System.Drawing.Point(249, 125);
+            this.btnAddPlayer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAddPlayer2.Name = "btnAddPlayer2";
-            this.btnAddPlayer2.Size = new System.Drawing.Size(257, 64);
+            this.btnAddPlayer2.Size = new System.Drawing.Size(289, 80);
             this.btnAddPlayer2.TabIndex = 4;
             this.btnAddPlayer2.Text = "Add Player 2";
             this.btnAddPlayer2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 450);
+            this.ClientSize = new System.Drawing.Size(799, 562);
             this.Controls.Add(this.btnAddPlayer2);
             this.Controls.Add(this.btnAddPlayer1);
             this.Controls.Add(this.btnCreateWeaponsAndSpells);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnStartGame);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
