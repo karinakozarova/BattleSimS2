@@ -29,8 +29,17 @@ namespace BattleSim
             string name = tbWeaponSpellName.Text;
             double damage = Convert.ToDouble(tbWeaponSpellDamage.Value);
 
-            Weapon weapon = new Weapon(name, damage);
-            weapon.SaveObjectToDb();
+            if (rbWeapon.Checked)
+            {
+                Weapon weapon = new Weapon(name, damage);
+                weapon.SaveObjectToDb();
+            }
+            else
+            {
+                double manaCost = Convert.ToDouble(tbManaCost.Value);
+                Spell spell = new Spell(name, damage, manaCost);
+                spell.SaveObjectToDb();
+            }
 
             this.Close();
 
