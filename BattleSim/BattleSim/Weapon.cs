@@ -63,7 +63,6 @@ namespace BattleSim
             {
                 conn.Close();
             }
-
         }
 
         public override string ToString()

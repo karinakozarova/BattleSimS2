@@ -36,9 +36,10 @@
             this.rbWeapon = new System.Windows.Forms.RadioButton();
             this.btnCreate = new System.Windows.Forms.Button();
             this.manaLbl = new System.Windows.Forms.Label();
-            this.tbManaCost = new System.Windows.Forms.TextBox();
             this.tbWeaponSpellDamage = new System.Windows.Forms.NumericUpDown();
+            this.tbManaCost = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.tbWeaponSpellDamage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbManaCost)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -131,16 +132,6 @@
             this.manaLbl.TabIndex = 21;
             this.manaLbl.Text = "Mana Cost";
             // 
-            // tbManaCost
-            // 
-            this.tbManaCost.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbManaCost.Location = new System.Drawing.Point(66, 464);
-            this.tbManaCost.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbManaCost.Multiline = true;
-            this.tbManaCost.Name = "tbManaCost";
-            this.tbManaCost.Size = new System.Drawing.Size(222, 33);
-            this.tbManaCost.TabIndex = 20;
-            // 
             // tbWeaponSpellDamage
             // 
             this.tbWeaponSpellDamage.Location = new System.Drawing.Point(66, 365);
@@ -148,14 +139,21 @@
             this.tbWeaponSpellDamage.Size = new System.Drawing.Size(230, 26);
             this.tbWeaponSpellDamage.TabIndex = 22;
             // 
+            // tbManaCost
+            // 
+            this.tbManaCost.Location = new System.Drawing.Point(58, 454);
+            this.tbManaCost.Name = "tbManaCost";
+            this.tbManaCost.Size = new System.Drawing.Size(230, 26);
+            this.tbManaCost.TabIndex = 23;
+            // 
             // CreateWeaponsAndSpells
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 592);
+            this.Controls.Add(this.tbManaCost);
             this.Controls.Add(this.tbWeaponSpellDamage);
             this.Controls.Add(this.manaLbl);
-            this.Controls.Add(this.tbManaCost);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.rbSpell);
             this.Controls.Add(this.rbWeapon);
@@ -168,6 +166,7 @@
             this.Text = "CreateWeaponsAndSpells";
             this.Load += new System.EventHandler(this.CreateWeaponsAndSpells_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbWeaponSpellDamage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tbManaCost)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,7 +181,7 @@
         private System.Windows.Forms.RadioButton rbWeapon;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Label manaLbl;
-        private System.Windows.Forms.TextBox tbManaCost;
         private System.Windows.Forms.NumericUpDown tbWeaponSpellDamage;
+        private System.Windows.Forms.NumericUpDown tbManaCost;
     }
 }
