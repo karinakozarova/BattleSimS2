@@ -11,7 +11,7 @@ namespace BattleSim
     {
         public static MySqlConnection GetConnection()
         {
-            MySqlConnection conn = new MySqlConnection("Server=studmysql01.fhict.local;Uid=dbi425113;Database=dbi425113;Pwd=bropro12;");
+            MySqlConnection conn = new MySqlConnection("Server=studmysql01.fhict.local;Uid=dbi425926;Database=dbi425926;Pwd=testtest321;");
             return conn;
         }
 
