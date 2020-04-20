@@ -23,5 +23,9 @@ namespace BattleSim
             
         }
 
+        private void btnCreateWeaponsAndSpells_Click(object sender, EventArgs e)
+        {
+            new CreateWeaponsAndSpells().Show();
+        }
     }
 }

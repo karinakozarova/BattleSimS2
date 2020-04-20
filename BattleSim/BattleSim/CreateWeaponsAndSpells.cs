@@ -15,11 +15,48 @@ namespace BattleSim
         public CreateWeaponsAndSpells()
         {
             InitializeComponent();
+            tbManaCost.Visible = false;
+            manaLbl.Visible = false;
         }
 
         private void CreateWeaponsAndSpells_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            string name = tbWeaponSpellName.Text;
+            double damage = Convert.ToDouble(tbWeaponSpellDamage.Value);
+
+            if (rbWeapon.Checked)
+            {
+                Weapon weapon = new Weapon(name, damage);
+                weapon.SaveObjectToDb();
+            }
+            else
+            {
+                double manaCost = Convert.ToDouble(tbManaCost.Value);
+                Spell spell = new Spell(name, damage, manaCost);
+                spell.SaveObjectToDb();
+            }
+
+            this.Close();
+
+        }
+
+        private void rbSpell_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbSpell.Checked)
+            {
+                tbManaCost.Visible = true;
+                manaLbl.Visible = true;
+            }
+            else
+            {
+                tbManaCost.Visible = false;
+                manaLbl.Visible = false;
+            }
         }
     }
 }

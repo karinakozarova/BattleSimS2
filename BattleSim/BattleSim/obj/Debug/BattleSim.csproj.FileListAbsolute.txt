@@ -39,3 +39,9 @@ C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\Battl
 C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.csproj.CopyComplete
 C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.exe
 C:\Users\35989\Desktop\Fontys\Semester 2\OOD\BattleSim\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.pdb
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.AddPlayerForm.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.CreateWeaponsAndSpells.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.Form1.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.GameForm.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.KnightControl.resources
+C:\Users\karin\Documents\uni\battlesim\BattleSim\BattleSim\obj\Debug\BattleSim.WizardControl.resources

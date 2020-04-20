@@ -36,16 +36,6 @@ namespace BattleSim
             return p;
         }
 
-        public Weapon AddWeapon(Weapon w)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Spell AddSpell(Spell s)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool PlaceAttack()
         {
             throw new NotImplementedException();
