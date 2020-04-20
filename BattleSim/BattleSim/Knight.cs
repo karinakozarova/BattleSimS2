@@ -20,7 +20,7 @@ namespace BattleSim
             ShieldPower = MAX_SHIELD_POWER;
         }
         
-        public override double ReceiveDamage()
+        public override void ReceiveDamage(double dealedDamage)
         {
             throw new NotImplementedException();
         }
