@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Weapon: Attack
+    public class Weapon: Attack
     {
         public Weapon(string name, double damage): base(name, damage) { }
 

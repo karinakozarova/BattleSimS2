@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Wizard: Character
+    public class Wizard: Character
     {
         private static Random s_Random = new Random();
         public double Mana
