@@ -8,6 +8,7 @@ namespace BattleSim
 {
     class Knight: Character
     {
+        private static Random s_Random = new Random();
         private const int MAX_SHIELD_POWER = 100;
         public double ShieldPower
         {
@@ -20,19 +21,43 @@ namespace BattleSim
             ShieldPower = MAX_SHIELD_POWER;
         }
         
-        public override double ReceiveDamage()
+        public override void ReceiveDamage(double dealedDamage)
         {
-            throw new NotImplementedException();
+            if(ShieldPower > 0)
+            {
+                ShieldPower -= dealedDamage;
+            }
+            else
+            {
+                Health -= dealedDamage;
+            }
         }
 
         public override double DealDamage()
         {
-            throw new NotImplementedException();
+            int perCent = s_Random.Next(0, 10);
+            double damage = 0;
+
+
+            if (perCent == 1)              
+            {
+                damage = 0;
+            }
+            else if (perCent == 2)     
+            {
+                damage = EquipedWeapon.Damage * 1.5;
+            }
+            else if (perCent >=3 && perCent <= 10) 
+            {
+                damage = EquipedWeapon.Damage;
+            }
+
+            return damage;
         }
 
         public override string ToString()
         {
-            return base.ToString() + "is a knight";
+            return base.ToString() + " - Knight";
         }
     }
 }
