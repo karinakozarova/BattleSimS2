@@ -8,6 +8,7 @@ namespace BattleSim
 {
     class Wizard: Character
     {
+        private static Random s_Random = new Random();
         public double Mana
         {
             get;
@@ -26,19 +27,48 @@ namespace BattleSim
             this.Mana = 100;
         }
 
-        public bool CastSpell()
+        public double CastSpell()
         {
-            throw new NotImplementedException();
+            double manaCost = this.SelectedSpell.ManaCost;
+            double damage = 0;
+            if(manaCost > this.Mana)
+            {
+                return 0;
+            }else
+            {
+                damage = this.SelectedSpell.Damage;
+                this.Mana -= manaCost;
+            }
+            return damage;
         }
 
-        public override double ReceiveDamage()
+        public override void ReceiveDamage(double dealedDamage)
         {
-            throw new NotImplementedException();
+            if(Health > 0)
+            {
+                Health -= dealedDamage;
+            }
         }
 
         public override double DealDamage()
         {
-            throw new NotImplementedException();
+            int generatedNumber = s_Random.Next(0, 10);
+            double damage = 0;
+
+            if (generatedNumber == 1)
+            {
+                damage = 0;
+            }
+            else if (generatedNumber == 2)
+            {
+                damage = EquipedWeapon.Damage * 1.5;
+            }
+            else if (generatedNumber >= 3 && generatedNumber <= 10)
+            {
+                damage = EquipedWeapon.Damage;
+            }
+
+            return damage;
         }
 
         public override string ToString()

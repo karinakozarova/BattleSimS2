@@ -18,7 +18,7 @@ namespace BattleSim
         public double Health
         {
             get;
-            private set;
+            set;
         }
 
         public Weapon EquipedWeapon
@@ -34,7 +34,7 @@ namespace BattleSim
             this.Health = MAX_HEALTH;
         }
 
-        public abstract double ReceiveDamage();
+        public abstract void ReceiveDamage(double dealedDamage);
 
         public abstract double DealDamage();
 
