@@ -77,7 +77,7 @@ namespace BattleSim
 
         public override string ToString()
         {
-            return $"This spell ({Name}) has damage {Damage} and costs {ManaCost} mana";
+            return $"({Name}) - damage {Damage} - {ManaCost} mana cost";
         }
     }
 }

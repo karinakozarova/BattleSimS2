@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Knight: Character
+    public class Knight: Character
     {
         private static Random s_Random = new Random();
-        private const int MAX_SHIELD_POWER = 100;
+        public const int MAX_SHIELD_POWER = 100;
         public double ShieldPower
         {
             get;
@@ -26,6 +26,11 @@ namespace BattleSim
             if(ShieldPower > 0)
             {
                 ShieldPower -= dealedDamage;
+                if(ShieldPower <= 0)
+                {
+                    Health = Health + ShieldPower;
+                    ShieldPower = 0;
+                }
             }
             else
             {
@@ -58,6 +63,21 @@ namespace BattleSim
         public override string ToString()
         {
             return base.ToString() + " - Knight";
+        }
+        public string DamageToString(double damage)
+        {
+            if (damage == 0)
+            {
+                return $"{base.Name} has missed!";
+            }
+            else if (damage == EquipedWeapon.Damage)
+            {
+                return $"{base.Name} has dealed {damage} damage!";
+            }
+            else
+            {
+                return $"{base.Name} has dealed {damage} critical damage!";
+            }
         }
     }
 }

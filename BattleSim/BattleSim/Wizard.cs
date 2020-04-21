@@ -31,6 +31,7 @@ namespace BattleSim
         {
             double manaCost = this.SelectedSpell.ManaCost;
             double damage = 0;
+
             if(manaCost > this.Mana)
             {
                 return 0;
@@ -44,7 +45,8 @@ namespace BattleSim
 
         public override void ReceiveDamage(double dealedDamage)
         {
-            if(Health > 0)
+            if (Health - dealedDamage < 0) Health = 0;
+            else if(Health > 0)
             {
                 Health -= dealedDamage;
             }
@@ -54,26 +56,54 @@ namespace BattleSim
         {
             int generatedNumber = s_Random.Next(0, 10);
             double damage = 0;
+            double manaCost = this.SelectedSpell.ManaCost;
 
-            if (generatedNumber == 1)
+            if (manaCost > this.Mana)
             {
-                damage = 0;
+                if (generatedNumber == 1)
+                {
+                    damage = 0;
+                }
+                else if (generatedNumber == 2)
+                {
+                    damage = EquipedWeapon.Damage * 1.5;
+                }
+                else if (generatedNumber >= 3 && generatedNumber <= 10)
+                {
+                    damage = EquipedWeapon.Damage;
+                }
             }
-            else if (generatedNumber == 2)
+            else
             {
-                damage = EquipedWeapon.Damage * 1.5;
+                damage = this.SelectedSpell.Damage;
+                this.Mana -= manaCost;
             }
-            else if (generatedNumber >= 3 && generatedNumber <= 10)
-            {
-                damage = EquipedWeapon.Damage;
-            }
-
             return damage;
         }
 
         public override string ToString()
         {
             return base.ToString() + "is a wizard";
+        }
+
+        public string DamageToString(double damage)
+        {
+            if (damage == 0)
+            {
+                return $"{base.Name} has missed!";
+            }
+            else if (damage == EquipedWeapon.Damage)
+            {
+                return $"{base.Name} has dealed {damage} damage!";
+            }
+            else if (damage == SelectedSpell.Damage)
+            {
+                return $"{base.Name} has dealed {damage} spell damage!";
+            }
+            else
+            {
+                return $"{base.Name} has dealed {damage} critical damage!";
+            }
         }
     }
 }

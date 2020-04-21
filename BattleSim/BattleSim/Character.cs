@@ -8,7 +8,7 @@ namespace BattleSim
 {
     public abstract class Character
     {
-        const double MAX_HEALTH = 100;
+        public const double MAX_HEALTH = 100;
         public string Name
         {
             get;

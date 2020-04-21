@@ -77,9 +77,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpellsUnitTests.cs" />
-    <Compile Include="ConnectToDb.cs" />
+    <Compile Include="ConnectToDbUnitTest.cs" />
     <Compile Include="AttackUnitTest.cs" />
     <Compile Include="PlayerUnitTest.cs" />
+    <Compile Include="KnightUnitTest.cs" />
+    <Compile Include="WizardUnitTest.cs" />
     <Compile Include="WeaponsUnitTests.cs" />
   </ItemGroup>
   <ItemGroup>

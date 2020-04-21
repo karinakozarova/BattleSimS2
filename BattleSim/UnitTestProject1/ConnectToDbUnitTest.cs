@@ -5,7 +5,7 @@ using BattleSim;
 namespace UnitTestProject1
 {
     [TestClass]
-    public class ConnectToDb
+    public class ConnectToDbUnitTest
     {
         [TestMethod]
         public void CanConnectToDb()
