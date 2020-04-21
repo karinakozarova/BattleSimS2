@@ -19,6 +19,7 @@ namespace BattleSim
         {
             InitializeComponent();
             newGame = new Game();
+            btnAddPlayer2.Enabled = false;
         }
 
         private void btnStartGame_Click(object sender, EventArgs e)
@@ -26,6 +27,8 @@ namespace BattleSim
             if (player1 != null && player2 != null)
             {
                 newGame = new Game(player1, player2);
+                newGame.StartGame();
+                btnStartGame.Enabled = false;
                 new GameForm(newGame).Show();
             }
             else
@@ -60,6 +63,7 @@ namespace BattleSim
             {
                 player1 = p;
                 btnAddPlayer1.Enabled = false;
+                btnAddPlayer2.Enabled = true;
             }
             else
             {
@@ -67,6 +71,11 @@ namespace BattleSim
                 btnAddPlayer2.Enabled = false;
             }
             return p;
+        }
+
+        private void BtnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -8,6 +8,11 @@ namespace BattleSim
 {
    public class Game
     {
+        bool player1Turn = true;
+        WizardControl wizardControl;
+        KnightControl knightControl;
+        WizardControl wizardControl1;
+        KnightControl knightControl1;
         public Player Player1
         {
             get;
@@ -44,10 +49,6 @@ namespace BattleSim
         //    return p;
         //}
 
-        public bool PlaceAttack()
-        {
-            throw new NotImplementedException();
-        }
 
         public bool StartGame()
         {
