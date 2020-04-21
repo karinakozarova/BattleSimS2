@@ -7,10 +7,25 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Weapon: Attack
+   public class Weapon: Attack
     {
-        public Weapon(string name, double damage): base(name, damage) { }
+        
 
+        public string WeaponName
+        {
+            get;
+            private set;
+        }
+        public double WeaponDamage
+        {
+            get;
+            private set;
+        }
+        public Weapon(string name, double damage) : base(name, damage)
+        {
+            WeaponName = name;
+            WeaponDamage = damage;
+        }
         public static List<Weapon> GetAllWeaponsFromDatabase()
         {
             MySqlConnection conn = Utils.GetConnection();
@@ -67,7 +82,7 @@ namespace BattleSim
 
         public override string ToString()
         {
-            return $"This weapon ({Name}) has damage {Damage}";
+            return $"({Name}) - damage {Damage}";
         }
     }
 }

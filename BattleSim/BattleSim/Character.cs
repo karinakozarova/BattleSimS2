@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    abstract class Character
+  public abstract class Character
     {
         const double MAX_HEALTH = 100;
         public string Name
