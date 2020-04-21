@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Game
+   public class Game
     {
-        private Player player1;
-        private Player player2;
+        public Player Player1
+        {
+            get;
+            private set;
+        }
+        public Player Player2
+        {
+            get;
+            private set;
+        }
         private bool isGameStarted;
 
         public Game(Player player1, Player player2)
         {
-            this.player1 = player1;
-            this.player2 = player2;
+            this.Player1 = player1;
+            this.Player2 = player2;
             isGameStarted = true;
         }
 
@@ -23,18 +31,18 @@ namespace BattleSim
             isGameStarted = false;
         }
 
-        private bool ArePlayersAdded()
-        {
-            return ((player1 != null) && (player2 != null)) ? true : false;
-        }
+        //private bool ArePlayersAdded()
+        //{
+        //    return ((player1 != null) && (player2 != null)) ? true : false;
+        //}
 
-        public Player AddPlayer(Player p)
-        {
-            if (ArePlayersAdded()) return null;
-            else if (player1 == null) player1 = p;
-            else player2 = p;
-            return p;
-        }
+        //public Player AddPlayer(Player p)
+        //{
+        //    if (ArePlayersAdded()) return null;
+        //    else if (player1 == null) player1 = p;
+        //    else player2 = p;
+        //    return p;
+        //}
 
         public bool PlaceAttack()
         {

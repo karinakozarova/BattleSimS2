@@ -12,9 +12,15 @@ namespace BattleSim
 {
     public partial class WizardControl : UserControl
     {
-        public WizardControl()
+        Player player;
+        public WizardControl(Player player)
         {
             InitializeComponent();
+            this.player = player;
+            Wizard wizard = (Wizard)player.SelectedCharacter;
+            lblPlayerName.Text = player.PlayerName;
+            pbrPlayerHealth.Value = (int)player.SelectedCharacter.Health;
+            pbrPlayerMana.Value = (int)wizard.Mana;
         }
     }
 }
