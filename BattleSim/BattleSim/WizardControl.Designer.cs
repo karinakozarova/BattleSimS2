@@ -111,7 +111,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "WizardControl";
             this.Size = new System.Drawing.Size(219, 484);
-            this.Load += new System.EventHandler(this.WizardControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

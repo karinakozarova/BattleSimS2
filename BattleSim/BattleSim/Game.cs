@@ -9,6 +9,8 @@ namespace BattleSim
    public class Game
     {
         bool player1Turn = true;
+        private bool isGameStarted;
+
         WizardControl wizardControl;
         KnightControl knightControl;
         WizardControl wizardControl1;
@@ -23,7 +25,6 @@ namespace BattleSim
             get;
             private set;
         }
-        private bool isGameStarted;
 
         public Game(Player player1, Player player2)
         {
@@ -36,23 +37,8 @@ namespace BattleSim
             isGameStarted = false;
         }
 
-        //private bool ArePlayersAdded()
-        //{
-        //    return ((player1 != null) && (player2 != null)) ? true : false;
-        //}
-
-        //public Player AddPlayer(Player p)
-        //{
-        //    if (ArePlayersAdded()) return null;
-        //    else if (player1 == null) player1 = p;
-        //    else player2 = p;
-        //    return p;
-        //}
-
-
         public bool StartGame()
         {
-            // TODO: add other things if needed
             isGameStarted = true;
             return true;
         }  
@@ -60,7 +46,6 @@ namespace BattleSim
         public bool EndGame()
         {
             isGameStarted = false;
-            // TODO: free up all resources here
             return true;
         }
     }

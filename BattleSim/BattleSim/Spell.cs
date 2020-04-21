@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Spell: Attack
+    public class Spell: Attack
     {
         public double ManaCost
         {

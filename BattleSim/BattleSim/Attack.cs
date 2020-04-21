@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-   public class Attack
+    public class Attack
     {
         public string Name
         {

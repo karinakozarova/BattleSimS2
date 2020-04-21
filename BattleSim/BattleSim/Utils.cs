@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Utils
+    public class Utils
     {
         public static MySqlConnection GetConnection()
         {

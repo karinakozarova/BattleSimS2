@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-   public class Player
+    public class Player
     {
         public string PlayerName {
             get;

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-   public class Weapon: Attack
+    public class Weapon: Attack
     {
         
-
         public string WeaponName
         {
             get;

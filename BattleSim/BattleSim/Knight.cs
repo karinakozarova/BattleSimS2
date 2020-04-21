@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Knight: Character
+    public class Knight: Character
     {
         private static Random s_Random = new Random();
-        private const int MAX_SHIELD_POWER = 100;
+        public const int MAX_SHIELD_POWER = 100;
         public double ShieldPower
         {
             get;

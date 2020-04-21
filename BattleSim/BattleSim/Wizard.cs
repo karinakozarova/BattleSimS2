@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BattleSim
 {
-    class Wizard: Character
+    public class Wizard: Character
     {
         private static Random s_Random = new Random();
         public double Mana
@@ -31,6 +31,7 @@ namespace BattleSim
         {
             double manaCost = this.SelectedSpell.ManaCost;
             double damage = 0;
+
             if(manaCost > this.Mana)
             {
                 return 0;
@@ -44,7 +45,8 @@ namespace BattleSim
 
         public override void ReceiveDamage(double dealedDamage)
         {
-            if(Health > 0)
+            if (Health - dealedDamage < 0) Health = 0;
+            else if(Health > 0)
             {
                 Health -= dealedDamage;
             }
@@ -55,6 +57,7 @@ namespace BattleSim
             int generatedNumber = s_Random.Next(0, 10);
             double damage = 0;
             double manaCost = this.SelectedSpell.ManaCost;
+
             if (manaCost > this.Mana)
             {
                 if (generatedNumber == 1)
@@ -69,8 +72,6 @@ namespace BattleSim
                 {
                     damage = EquipedWeapon.Damage;
                 }
-
-                return damage;
             }
             else
             {
@@ -78,14 +79,13 @@ namespace BattleSim
                 this.Mana -= manaCost;
             }
             return damage;
-
-            
         }
 
         public override string ToString()
         {
             return base.ToString() + "is a wizard";
         }
+
         public string DamageToString(double damage)
         {
             if (damage == 0)
