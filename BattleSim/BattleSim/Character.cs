@@ -36,7 +36,8 @@ namespace BattleSim
 
         public abstract void ReceiveDamage(double dealedDamage);
 
-        public abstract double DealDamage(); 
+        public abstract double DealDamage();
+        public abstract string DamageToString(double damage);
 
         public override string ToString()
         {

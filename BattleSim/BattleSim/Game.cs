@@ -11,10 +11,6 @@ namespace BattleSim
         bool player1Turn = true;
         private bool isGameStarted;
 
-        WizardControl wizardControl;
-        KnightControl knightControl;
-        WizardControl wizardControl1;
-        KnightControl knightControl1;
         public Player Player1
         {
             get;

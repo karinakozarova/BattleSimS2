@@ -86,7 +86,7 @@ namespace BattleSim
             return base.ToString() + "is a wizard";
         }
 
-        public string DamageToString(double damage)
+        public override string DamageToString(double damage)
         {
             if (damage == 0)
             {

@@ -10,21 +10,7 @@ namespace BattleSim
     public class Weapon: Attack
     {
         
-        public string WeaponName
-        {
-            get;
-            private set;
-        }
-        public double WeaponDamage
-        {
-            get;
-            private set;
-        }
-        public Weapon(string name, double damage) : base(name, damage)
-        {
-            WeaponName = name;
-            WeaponDamage = damage;
-        }
+        public Weapon(string name, double damage) : base(name, damage){}
         public static List<Weapon> GetAllWeaponsFromDatabase()
         {
             MySqlConnection conn = Utils.GetConnection();

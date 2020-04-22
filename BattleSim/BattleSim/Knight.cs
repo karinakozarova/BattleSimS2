@@ -64,7 +64,7 @@ namespace BattleSim
         {
             return base.ToString() + " - Knight";
         }
-        public string DamageToString(double damage)
+        public override string DamageToString(double damage)
         {
             if (damage == 0)
             {
